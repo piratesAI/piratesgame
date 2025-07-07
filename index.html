@@ -3,452 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pirates Adventures - Play the Ultimate Pirate Game Online | piratesgame.online</title>
-    <meta name="description" content="Join epic Pirates Adventures online! Navigate treacherous seas, battle enemy ships, and discover hidden treasures in this thrilling multiplayer pirate game. Play now for free!">
-    <meta name="keywords" content="pirates adventures, pirate game, online game, multiplayer, sea battles, treasure hunting, ship combat">
+    <title>Pirates Adventures - Epic Online Pirate Game | Play Free Now</title>
+    <meta name="description" content="Embark on thrilling Pirates Adventures! Command your ship, battle enemies, and conquer the seas in this exciting online pirate game. Play free now!">
+    <meta name="keywords" content="pirates adventures, online pirate game, ship battle, sea adventure, free online game, pirate simulator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Pirates Game Online">
     <link rel="canonical" href="https://piratesgame.online">
-    <meta property="og:title" content="Pirates Adventures - Play the Ultimate Pirate Game Online">
-    <meta property="og:description" content="Join epic Pirates Adventures online! Navigate treacherous seas, battle enemy ships, and discover hidden treasures in this thrilling multiplayer pirate game.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pirates Adventures - Epic Online Pirate Game">
+    <meta property="og:description" content="Embark on thrilling Pirates Adventures! Command your ship, battle enemies, and conquer the seas in this exciting online pirate game.">
     <meta property="og:url" content="https://piratesgame.online">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://piratesgame.online/pirates-adventures-thumbnail.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pirates Adventures - Play the Ultimate Pirate Game Online">
-    <meta name="twitter:description" content="Join epic Pirates Adventures online! Navigate treacherous seas, battle enemy ships, and discover hidden treasures.">
+    <meta property="og:image" content="https://piratesgame.online/pirates-adventures-og.jpg">
     
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pirates Adventures - Epic Online Pirate Game">
+    <meta name="twitter:description" content="Embark on thrilling Pirates Adventures! Command your ship, battle enemies, and conquer the seas.">
+    <meta name="twitter:image" content="https://piratesgame.online/pirates-adventures-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Apple-inspired CSS -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --apple-blue: #007AFF;
+            --apple-blue-dark: #0056CC;
+            --apple-gray: #F2F2F7;
+            --apple-gray-dark: #1C1C1E;
+            --apple-text: #1D1D1F;
+            --apple-text-secondary: #86868B;
+            --apple-green: #30D158;
+            --apple-orange: #FF9500;
+            --apple-red: #FF3B30;
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #1d1d1f;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
+        .glass-effect {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #007aff;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo::before {
-            content: "🏴‍☠️";
-            margin-right: 10px;
-            font-size: 28px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-        
-        nav a {
-            color: #1d1d1f;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        nav a:hover {
-            color: #007aff;
-        }
-        
-        .hero {
-            padding: 80px 0 60px;
-            text-align: center;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            margin: 40px 20px;
-            border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 20px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-        
-        .subtitle {
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
         .game-container {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.98);
             border-radius: 20px;
-            padding: 40px;
-            margin: 40px 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
         
-        .game-wrapper {
-            position: relative;
-            width: 100%;
-            height: 600px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-            border: 2px solid #f5f5f7;
+        .btn-primary {
+            background: var(--apple-blue);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
-        .game-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 15px;
-        }
-        
-        .content-section {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 60px 40px;
-            margin: 40px 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-        
-        h2 {
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            font-weight: 700;
-            color: #1d1d1f;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+        .btn-primary:hover {
+            background: var(--apple-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
         }
         
         .feature-card {
-            background: rgba(247, 247, 247, 0.8);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.05);
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            transition: all 0.3s ease;
         }
         
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
         }
         
-        .feature-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
-            display: block;
-        }
-        
-        .feature-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 15px;
-        }
-        
-        .feature-description {
-            color: #6e6e73;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        
-        .game-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
-        }
-        
-        .info-card {
-            background: rgba(247, 247, 247, 0.8);
-            border-radius: 15px;
-            padding: 30px;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-        
-        .info-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #007aff;
-            margin-bottom: 15px;
-        }
-        
-        .info-content {
-            color: #6e6e73;
-            line-height: 1.6;
-        }
-        
-        .play-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #007aff, #0056b3);
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
-            margin-top: 30px;
-        }
-        
-        .play-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 122, 255, 0.4);
-        }
-        
-        footer {
-            background: rgba(0, 0, 0, 0.9);
-            color: rgba(255, 255, 255, 0.8);
-            padding: 40px 0;
-            text-align: center;
-            margin-top: 60px;
-        }
-        
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: #007aff;
+        .game-iframe {
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
         
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
-            nav ul {
-                gap: 20px;
-            }
-            
-            .hero {
-                padding: 60px 20px 40px;
-                margin: 20px 10px;
-            }
-            
-            .game-container,
-            .content-section {
-                padding: 30px 20px;
-                margin: 20px 10px;
-            }
-            
-            .game-wrapper {
+            .game-iframe {
                 height: 400px;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .game-info {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            
-            .footer-links {
-                flex-direction: column;
-                gap: 15px;
             }
         }
         
-        @media (max-width: 480px) {
-            .game-wrapper {
-                height: 300px;
-            }
-            
-            .feature-card,
-            .info-card {
-                padding: 20px;
-            }
+        .anchor-decoration {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23ffffff' fill-opacity='0.1'/%3E%3C/svg%3E") repeat-x;
+            background-size: 1200px 120px;
+            animation: wave 10s linear infinite;
+        }
+        
+        @keyframes wave {
+            0% { background-position-x: 0; }
+            100% { background-position-x: 1200px; }
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo">Pirates Adventures</a>
-                <nav>
-                    <ul>
-                        <li><a href="#game">Play Now</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </nav>
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="glass-effect fixed w-full top-0 z-50 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl">⚓</span>
+                <span class="text-xl font-bold text-gray-800">Pirates Adventures</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#game" class="text-gray-600 hover:text-blue-600 transition-colors">Play Game</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Pirates Adventures</h1>
-                <p class="subtitle">Embark on the ultimate pirate adventure across treacherous seas, battle enemy ships, and discover legendary treasures in this thrilling multiplayer online game.</p>
-                <a href="#game" class="play-button">⚔️ Start Your Adventure</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-16 px-4 text-center">
+        <div class="waves"></div>
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Pirates Adventures
+            </h1>
+            <p class="text-xl md:text-2xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
+                Set sail on the ultimate pirate adventure and conquer the seven seas
+            </p>
+            <button onclick="document.getElementById('game').scrollIntoView({behavior: 'smooth'})" 
+                    class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center space-x-2">
+                <span>🏴‍☠️</span>
+                <span>Start Adventure</span>
+            </button>
+        </div>
+    </section>
 
-        <section id="game" class="game-container">
-            <div class="container">
-                <div class="game-wrapper">
+    <!-- Game Section -->
+    <section id="game" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="game-container p-6 md:p-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">
+                    Play Pirates Adventures Online
+                </h2>
+                <div class="aspect-video w-full max-w-4xl mx-auto">
                     <iframe 
                         src="https://poki.com/zh/g/shipo-io" 
-                        class="game-iframe"
-                        title="Pirates Adventures - Online Pirate Game"
-                        allowfullscreen>
+                        class="game-iframe w-full h-full border-0"
+                        allow="fullscreen; gamepad; microphone; camera"
+                        scrolling="no"
+                        frameborder="0">
                     </iframe>
                 </div>
-            </div>
-        </section>
-
-        <section id="features" class="content-section">
-            <div class="container">
-                <h2>🏴‍☠️ Game Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <span class="feature-icon">⚔️</span>
-                        <h3 class="feature-title">Epic Ship Battles</h3>
-                        <p class="feature-description">Engage in intense naval combat with players from around the world. Command your pirate ship and dominate the high seas.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">💰</span>
-                        <h3 class="feature-title">Treasure Hunting</h3>
-                        <p class="feature-description">Discover hidden treasures scattered across mysterious islands and become the richest pirate captain.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">🌊</span>
-                        <h3 class="feature-title">Open World Exploration</h3>
-                        <p class="feature-description">Navigate vast oceans, explore uncharted territories, and uncover the secrets of the seven seas.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">🤝</span>
-                        <h3 class="feature-title">Multiplayer Action</h3>
-                        <p class="feature-description">Team up with fellow pirates or compete against them in this thrilling multiplayer experience.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="content-section">
-            <div class="container">
-                <h2>🗺️ About Pirates Adventures</h2>
-                <div class="game-info">
-                    <div class="info-card">
-                        <h3 class="info-title">Game Overview</h3>
-                        <p class="info-content">Pirates Adventures is an immersive online multiplayer game that puts you in the boots of a fearless pirate captain. Navigate dangerous waters, engage in thrilling ship-to-ship combat, and search for legendary treasures. With its stunning visuals and engaging gameplay, this game offers an authentic pirate experience that will keep you coming back for more.</p>
-                    </div>
-                    <div class="info-card">
-                        <h3 class="info-title">How to Play</h3>
-                        <p class="info-content">Control your pirate ship using simple keyboard controls. Use WASD or arrow keys to navigate, space to fire cannons, and mouse to aim. Collect resources, upgrade your ship, and battle other players to become the most feared pirate on the seven seas. The game features intuitive controls that are easy to learn but challenging to master.</p>
-                    </div>
-                    <div class="info-card">
-                        <h3 class="info-title">Game Modes</h3>
-                        <p class="info-content">Experience different game modes including Free-for-All battles, Team Deathmatch, and Treasure Hunt. Each mode offers unique challenges and rewards. Compete in ranked matches to climb the leaderboards or enjoy casual play with friends in custom lobbies.</p>
-                    </div>
-                    <div class="info-card">
-                        <h3 class="info-title">System Requirements</h3>
-                        <p class="info-content">Pirates Adventures runs smoothly on any modern web browser with JavaScript enabled. No downloads or installations required - just click and play! The game is optimized for both desktop and mobile devices, ensuring a seamless gaming experience across all platforms.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <div class="container">
-                <h2>🎮 Ready to Set Sail?</h2>
-                <p style="text-align: center; font-size: 1.2rem; color: #6e6e73; margin-bottom: 30px;">
-                    Join thousands of players in the ultimate pirate adventure. Build your crew, upgrade your ship, and become the most legendary pirate captain in Pirates Adventures!
+                <p class="text-center mt-6 text-gray-600 max-w-2xl mx-auto">
+                    Experience the thrill of commanding your own pirate ship in this action-packed online adventure. 
+                    Navigate treacherous waters, engage in epic battles, and build your pirate empire!
                 </p>
-                <div style="text-align: center;">
-                    <a href="#game" class="play-button">🚢 Play Pirates Adventures Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-4 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Epic Pirate Adventure Features
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card p-6 text-center">
+                    <div class="text-4xl mb-4">🚢</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Ship Combat</h3>
+                    <p class="text-gray-600">
+                        Command powerful warships and engage in thrilling naval battles against enemy pirates and sea monsters.
+                    </p>
+                </div>
+                <div class="feature-card p-6 text-center">
+                    <div class="text-4xl mb-4">🏴‍☠️</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Pirate Crew</h3>
+                    <p class="text-gray-600">
+                        Recruit a loyal crew of skilled pirates, each with unique abilities to help you dominate the seas.
+                    </p>
+                </div>
+                <div class="feature-card p-6 text-center">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Treasure Hunting</h3>
+                    <p class="text-gray-600">
+                        Discover hidden treasures, ancient artifacts, and valuable resources scattered across mysterious islands.
+                    </p>
+                </div>
+                <div class="feature-card p-6 text-center">
+                    <div class="text-4xl mb-4">🏝️</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Island Exploration</h3>
+                    <p class="text-gray-600">
+                        Explore uncharted islands, establish trading posts, and uncover the secrets of the Caribbean.
+                    </p>
+                </div>
+                <div class="feature-card p-6 text-center">
+                    <div class="text-4xl mb-4">⚔️</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">PvP Battles</h3>
+                    <p class="text-gray-600">
+                        Challenge other players in intense player-versus-player combat and prove your pirate supremacy.
+                    </p>
+                </div>
+                <div class="feature-card p-6 text-center">
+                    <div class="text-4xl mb-4">🌊</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Dynamic Weather</h3>
+                    <p class="text-gray-600">
+                        Navigate through changing weather conditions including storms, fog, and perfect sailing winds.
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#game">Play Game</a>
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-effect p-8 md:p-12 rounded-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800 text-center">
+                    About Pirates Adventures
+                </h2>
+                <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+                    <p>
+                        Pirates Adventures is an immersive online pirate game that transports players into the golden age of piracy. 
+                        Set in the vast Caribbean seas, this thrilling adventure combines strategic gameplay, intense combat, and 
+                        exploration in a beautifully crafted maritime world.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Game Overview</h3>
+                    <p>
+                        As a aspiring pirate captain, you'll start with a modest vessel and gradually build your reputation through 
+                        successful raids, strategic alliances, and cunning navigation of the political waters of the Caribbean. 
+                        The game features a persistent online world where your actions have lasting consequences and your reputation 
+                        precedes you wherever you sail.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Gameplay Mechanics</h3>
+                    <p>
+                        The core gameplay revolves around ship management, crew recruitment, and naval combat. Players must balance 
+                        resources, maintain crew morale, and make strategic decisions about when to fight, when to flee, and when to 
+                        form alliances. The game features a sophisticated economy system where players can trade goods, sell captured 
+                        vessels, and invest in port facilities.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Why Play Pirates Adventures?</h3>
+                    <p>
+                        This game offers an authentic pirate experience with historically accurate ships, weapons, and locations. 
+                        The dynamic weather system, day-night cycle, and realistic sailing mechanics create an immersive environment 
+                        that captures the romance and danger of the pirate era. Whether you prefer solo adventures or multiplayer 
+                        cooperation, Pirates Adventures provides endless entertainment for maritime enthusiasts.
+                    </p>
+                </div>
             </div>
-            <p>&copy; 2024 Pirates Adventures. All rights reserved. | piratesgame.online</p>
-            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
-                Experience the thrill of pirate life in this epic online adventure game.
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 px-4 text-center bg-gradient-to-r from-blue-600 to-purple-600">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Ready to Begin Your Pirate Adventure?
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8">
+                Join thousands of players in the ultimate online pirate experience
             </p>
+            <button onclick="document.getElementById('game').scrollIntoView({behavior: 'smooth'})" 
+                    class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center space-x-2">
+                <span>⚓</span>
+                <span>Play Now - It's Free!</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Pirates Adventures</h3>
+                    <p class="text-gray-400">
+                        The ultimate online pirate gaming experience. Set sail for adventure!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#game" class="hover:text-white transition-colors">Play Game</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Game Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Free to Play</li>
+                        <li>Online Multiplayer</li>
+                        <li>Cross-Platform</li>
+                        <li>Regular Updates</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Game Guide</li>
+                        <li>FAQ</li>
+                        <li>Contact Us</li>
+                        <li>Bug Reports</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Pirates Adventures. All rights reserved. | <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a></p>
+            </div>
         </div>
     </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "Pirates Adventures",
+        "description": "Embark on thrilling Pirates Adventures! Command your ship, battle enemies, and conquer the seas in this exciting online pirate game.",
+        "url": "https://piratesgame.online",
+        "genre": "Action, Adventure, Strategy",
+        "gamePlatform": "Web Browser",
+        "operatingSystem": "Any",
+        "applicationCategory": "Game",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Pirates Game Online"
+        }
+    }
+    </script>
 </body>
 </html>
